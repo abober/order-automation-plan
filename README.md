@@ -33,3 +33,12 @@ The system architecture is documented using the C4 model and Structurizr. The di
 1. Clone this repository
 
 2. Configure environment variables in `.env`:
+
+3. Start the documentation server:
+
+   ```bash
+   docker-compose up -d
+   ```
+
+   The documentation server will be available at the address specified in the `.env` file (PORT_DIAGRAMS).
+   By default, you can access the documentation at: `http://localhost:8083`

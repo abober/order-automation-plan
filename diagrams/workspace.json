@@ -1,0 +1,986 @@
+{
+  "id" : 1,
+  "name" : "Order automation platform",
+  "description" : "Platform for automating order processing and communication with external systems.",
+  "lastModifiedDate" : "2024-11-14T21:13:11Z",
+  "lastModifiedAgent" : "structurizr-javascript",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJPcmRlciBhdXRvbWF0aW9uIHBsYXRmb3JtIiB7CiAgICBkZXNjcmlwdGlvbiAiUGxhdGZvcm0gZm9yIGF1dG9tYXRpbmcgb3JkZXIgcHJvY2Vzc2luZyBhbmQgY29tbXVuaWNhdGlvbiB3aXRoIGV4dGVybmFsIHN5c3RlbXMuIgogICAgbW9kZWwgewogICAgICAgIHVzZXIgPSBwZXJzb24gIkNsaWVudCBVc2VyIiAiVXNlciBpbnRlcmFjdGluZyB3aXRoIHRoZSBzeXN0ZW0gdG8gcGxhY2UgYW5kIG1hbmFnZSBvcmRlcnMuIiAiUGVyc29uIgoKICAgICAgICBhZG1pbiA9IHBlcnNvbiAiU3lzdGVtIEFkbWluIiAiQWRtaW5pc3RyYXRvciByZXNwb25zaWJsZSBmb3Igb3ZlcnNlZWluZyBhbmQgbWFuYWdpbmcgdGhlIGF1dG9tYXRpb24gcHJvY2Vzc2VzLiIgIlBlcnNvbiIKCiAgICAgICAgZ3JvdXAgIkNvcmUgU3lzdGVtcyIgewogICAgICAgICAgICBjcm1TeXN0ZW0gPSBzb2Z0d2FyZVN5c3RlbSAiQ1JNIFN5c3RlbSIgIkV4dGVybmFsIENSTSBzeXN0ZW0gZm9yIG1hbmFnaW5nIGNsaWVudCByZWxhdGlvbnNoaXBzLiIgIkNSTSBTeXN0ZW0iCiAgICAgICAgICAgIG9tc1N5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJPTVMgU3lzdGVtIiAiRXh0ZXJuYWwgT3JkZXIgTWFuYWdlbWVudCBTeXN0ZW0gd2l0aCBpdHMgb3duIGRhdGFiYXNlLCBHVUksIGFuZCBBUEkgZm9yIG9yZGVyIHByb2Nlc3NpbmcuIiAiT01TIFN5c3RlbSIKICAgICAgICB9CgogICAgICAgIGdyb3VwICJDb21tdW5pY2F0aW9uIFNlcnZpY2VzIiB7CiAgICAgICAgICAgIHNtc1NlcnZpY2UgPSBzb2Z0d2FyZVN5c3RlbSAiVHdpbGlvIiAiRXh0ZXJuYWwgc2VydmljZSBmb3Igc2VuZGluZyBTTVMgbm90aWZpY2F0aW9ucy4iICJUd2lsaW8iCiAgICAgICAgICAgIGVtYWlsU2VydmljZSA9IHNvZnR3YXJlU3lzdGVtICJTZW5kR3JpZCIgIkV4dGVybmFsIHNlcnZpY2UgZm9yIHNlbmRpbmcgZW1haWxzLiIgIlNlbmRHcmlkIgogICAgICAgICAgICBpbnRlcm5hbE5vdGlmaWNhdGlvbiA9IHNvZnR3YXJlU3lzdGVtICJTbGFjayIgIlNlcnZpY2UgZm9yIHNlbmRpbmcgaW50ZXJuYWwgbm90aWZpY2F0aW9ucy4iICJTbGFjayIKICAgICAgICB9CgogICAgICAgIGdyb3VwICJQcm9jZXNzaW5nICYgTW9uaXRvcmluZyIgewogICAgICAgICAgICBhdXRvbWF0aW9uUGxhdGZvcm0gPSBzb2Z0d2FyZVN5c3RlbSAiQXV0b21hdGlvbiBQbGF0Zm9ybSIgIlBsYXRmb3JtIGZvciBtYW5hZ2luZyBhbmQgYXV0b21hdGluZyBidXNpbmVzcyBwcm9jZXNzZXMuIiAiTWFrZS5jb20iIHsKICAgICAgICAgICAgICAgIHdvcmtmbG93RW5naW5lID0gY29udGFpbmVyICJXb3JrZmxvdyBFbmdpbmUiICJDb3JlIGVuZ2luZSBmb3IgZXhlY3V0aW5nIGFuZCBtYW5hZ2luZyBhdXRvbWF0aW9uIHdvcmtmbG93cy4iICJNYWtlLmNvbSIKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgaW50ZWdyYXRpb25IdWIgPSBjb250YWluZXIgIkludGVncmF0aW9uIEh1YiIgIkNlbnRyYWwgaHViIGZvciBtYW5hZ2luZyBleHRlcm5hbCBzeXN0ZW0gaW50ZWdyYXRpb25zLiIgIk1ha2UuY29tLCBSRVNUIEFQSSIKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgc2NoZWR1bGVyU2VydmljZSA9IGNvbnRhaW5lciAiU2NoZWR1bGVyIFNlcnZpY2UiICJTZXJ2aWNlIGZvciBtYW5hZ2luZyBzY2hlZHVsZWQgYW5kIHJlY3VycmluZyB0YXNrcy4iICJNYWtlLmNvbSBTY2hlZHVsZXIiCiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIG1vbml0b3JpbmdTZXJ2aWNlID0gY29udGFpbmVyICJNb25pdG9yaW5nIFNlcnZpY2UiICJTZXJ2aWNlIGZvciB0cmFja2luZyB3b3JrZmxvdyBleGVjdXRpb24gYW5kIHBlcmZvcm1hbmNlLiIgIk1ha2UuY29tIEFuYWx5dGljcyIKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgZGF0YWJhc2UgPSBzb2Z0d2FyZVN5c3RlbSAiQXV0b21hdGlvbiBEYXRhYmFzZSIgIlJlbGF0aW9uYWwgZGF0YWJhc2UgZm9yIHN0b3JpbmcgYXV0b21hdGlvbiB3b3JrZmxvd3MgYW5kIGludGVncmF0aW9uIGRhdGEuIiAiQXV0b21hdGlvbiBEYXRhYmFzZSIKICAgICAgICAgICAgc2VydmVybGVzc0xvZ2ljID0gc29mdHdhcmVTeXN0ZW0gIkFXUyBMYW1iZGEiICJTZXJ2ZXJsZXNzIGNvbXB1dGluZyBzZXJ2aWNlLiIgIkFXUyBMYW1iZGEiCiAgICAgICAgICAgIG1vbml0b3JpbmcgPSBzb2Z0d2FyZVN5c3RlbSAiTW9uaXRvcmluZyBTeXN0ZW0iICJTeXN0ZW0gZm9yIHRyYWNraW5nIHBlcmZvcm1hbmNlLiIgIkdyYWZhbmEiCiAgICAgICAgfQoKICAgICAgICB1c2VyIC0+IGF1dG9tYXRpb25QbGF0Zm9ybSAiSW50ZXJhY3RzIHdpdGgiCiAgICAgICAgYWRtaW4gLT4gYXV0b21hdGlvblBsYXRmb3JtICJNYW5hZ2VzIHdvcmtmbG93cyBvbiIKICAgICAgICBhdXRvbWF0aW9uUGxhdGZvcm0gLT4gY3JtU3lzdGVtICJDb21tdW5pY2F0ZXMgd2l0aCBmb3IgY3VzdG9tZXIgZGF0YSIKICAgICAgICBhdXRvbWF0aW9uUGxhdGZvcm0gLT4gb21zU3lzdGVtICJDb21tdW5pY2F0ZXMgd2l0aCBmb3Igb3JkZXIgcHJvY2Vzc2luZyIKICAgICAgICBhdXRvbWF0aW9uUGxhdGZvcm0gLT4gc21zU2VydmljZSAiU2VuZHMgU01TIG5vdGlmaWNhdGlvbnMgdmlhIgogICAgICAgIGF1dG9tYXRpb25QbGF0Zm9ybSAtPiBlbWFpbFNlcnZpY2UgIlNlbmRzIGVtYWlscyB2aWEiCiAgICAgICAgYXV0b21hdGlvblBsYXRmb3JtIC0+IGludGVybmFsTm90aWZpY2F0aW9uICJTZW5kcyBpbnRlcm5hbCBub3RpZmljYXRpb25zIHZpYSIKICAgICAgICBhdXRvbWF0aW9uUGxhdGZvcm0gLT4gc2VydmVybGVzc0xvZ2ljICJUcmlnZ2VycyBBV1MgTGFtYmRhIGZvciBzcGVjaWZpYyBsb2dpYyIKICAgICAgICB3b3JrZmxvd0VuZ2luZSAtPiBkYXRhYmFzZSAiUmVhZHMvV3JpdGVzIHdvcmtmbG93IGRhdGEiCiAgICAgICAgaW50ZWdyYXRpb25IdWIgLT4gZGF0YWJhc2UgIlJlYWRzL1dyaXRlcyBpbnRlZ3JhdGlvbiBkYXRhIgogICAgICAgIG1vbml0b3JpbmdTZXJ2aWNlIC0+IG1vbml0b3JpbmcgIlNlbmRzIHBlcmZvcm1hbmNlIG1ldHJpY3MiCiAgICAgICAgd29ya2Zsb3dFbmdpbmUgLT4gaW50ZWdyYXRpb25IdWIgIlNlbmRzIGludGVncmF0aW9uIHJlcXVlc3RzIgogICAgICAgIHNjaGVkdWxlclNlcnZpY2UgLT4gd29ya2Zsb3dFbmdpbmUgIlRyaWdnZXJzIHNjaGVkdWxlZCB3b3JrZmxvd3MiCiAgICAgICAgd29ya2Zsb3dFbmdpbmUgLT4gbW9uaXRvcmluZ1NlcnZpY2UgIlJlcG9ydHMgd29ya2Zsb3cgc3RhdHVzIgogICAgICAgIGludGVncmF0aW9uSHViIC0+IGNybVN5c3RlbSAiUmV0cmlldmVzIGN1c3RvbWVyIGRhdGEiCiAgICAgICAgaW50ZWdyYXRpb25IdWIgLT4gb21zU3lzdGVtICJNYW5hZ2VzIG9yZGVycyIKICAgICAgICBpbnRlZ3JhdGlvbkh1YiAtPiBzbXNTZXJ2aWNlICJTZW5kcyBTTVMgbm90aWZpY2F0aW9ucyIKICAgICAgICBpbnRlZ3JhdGlvbkh1YiAtPiBlbWFpbFNlcnZpY2UgIlNlbmRzIGVtYWlscyIKICAgICAgICBhZG1pbiAtPiBtb25pdG9yaW5nICJWaWV3cyBtb25pdG9yaW5nIGRhc2hib2FyZHMiCiAgICAgICAgc21zU2VydmljZSAtPiBtb25pdG9yaW5nICJTZW5kcyBUd2lsaW8gSW5zaWdodHMgbWV0cmljcyBhbmQgbG9ncyIKICAgICAgICBlbWFpbFNlcnZpY2UgLT4gbW9uaXRvcmluZyAiU2VuZHMgU2VuZEdyaWQgYW5hbHl0aWNzIGFuZCBkZWxpdmVyeSBzdGF0cyIKICAgICAgICBjcm1TeXN0ZW0gLT4gbW9uaXRvcmluZyAiU2VuZHMgQVBJIHVzYWdlIGFuZCBwZXJmb3JtYW5jZSBtZXRyaWNzIgogICAgICAgIG9tc1N5c3RlbSAtPiBtb25pdG9yaW5nICJTZW5kcyBvcmRlciBwcm9jZXNzaW5nIG1ldHJpY3MiCiAgICAgICAgYXV0b21hdGlvblBsYXRmb3JtIC0+IG1vbml0b3JpbmcgIlNlbmRzIE1ha2UuY29tIGV4ZWN1dGlvbiBtZXRyaWNzIgogICAgICAgIHNlcnZlcmxlc3NMb2dpYyAtPiBtb25pdG9yaW5nICJTZW5kcyBMYW1iZGEgZXhlY3V0aW9uIG1ldHJpY3MgYW5kIGxvZ3MiCiAgICAgICAgaW50ZWdyYXRpb25IdWIgLT4gaW50ZXJuYWxOb3RpZmljYXRpb24gIlNlbmRzIGludGVybmFsIHRlYW0gbm90aWZpY2F0aW9ucyB0byBTbGFjayIKICAgICAgICB3b3JrZmxvd0VuZ2luZSAtPiBpbnRlcm5hbE5vdGlmaWNhdGlvbiAiU2VuZHMgd29ya2Zsb3cgZmFpbHVyZSBhbGVydHMiCiAgICAgICAgc2VydmVybGVzc0xvZ2ljIC0+IGludGVybmFsTm90aWZpY2F0aW9uICJTZW5kcyBMYW1iZGEgZXhlY3V0aW9uIGVycm9ycyIKICAgICAgICBpbnRlcm5hbE5vdGlmaWNhdGlvbiAtPiBtb25pdG9yaW5nICJTZW5kcyBTbGFjayBBUEkgdXNhZ2UgYW5kIGRlbGl2ZXJ5IHN0YXRzIgogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICBzeXN0ZW1Db250ZXh0IGF1dG9tYXRpb25QbGF0Zm9ybSB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvbGF5b3V0IGxyCiAgICAgICAgfQoKICAgICAgICBjb250YWluZXIgYXV0b21hdGlvblBsYXRmb3JtIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9sYXlvdXQgbHIKICAgICAgICB9CgogICAgICAgIHN0eWxlcyB7CiAgICAgICAgICAgIGVsZW1lbnQgIlNvZnR3YXJlIFN5c3RlbSIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjMTE2OGJkCiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiUGVyc29uIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBwZXJzb24KICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzA4NDI3YgogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkF1dG9tYXRpb24gRGF0YWJhc2UiIHsKICAgICAgICAgICAgICAgIHNoYXBlIGN5bGluZGVyCiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICNmZjhjNDIKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJDUk0gU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBzaGFwZSByb3VuZGVkYm94CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICM1ZjYzNjcKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJPTVMgU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBzaGFwZSByb3VuZGVkYm94CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICM1ZjYzNjcKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJUd2lsaW8iIHsKICAgICAgICAgICAgICAgIHNoYXBlIHJvdW5kZWRib3gKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzVmNjM2NwogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIlNlbmRHcmlkIiB7CiAgICAgICAgICAgICAgICBzaGFwZSByb3VuZGVkYm94CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICM1ZjYzNjcKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJTbGFjayIgewogICAgICAgICAgICAgICAgc2hhcGUgcm91bmRlZGJveAogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjNWY2MzY3CiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiTWFrZS5jb20iIHsKICAgICAgICAgICAgICAgIHNoYXBlIHJvdW5kZWRib3gKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzNiNjk3OAogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkFXUyBMYW1iZGEiIHsKICAgICAgICAgICAgICAgIHNoYXBlIHJvdW5kZWRib3gKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzc3YzRkMwogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkdyYWZhbmEiIHsKICAgICAgICAgICAgICAgIHNoYXBlIHJvdW5kZWRib3gKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgI2ZhYWU3YgogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICBkeW5hbWljICogIk1ldHJpY3NDb2xsZWN0aW9uRmxvdyIgewogICAgICAgICAgICB0aXRsZSAiRXh0ZXJuYWwgU2VydmljZXMgTWV0cmljcyBDb2xsZWN0aW9uIgogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgICAgIHNtc1NlcnZpY2UgLT4gbW9uaXRvcmluZyAiMS4gVHdpbGlvIEluc2lnaHRzIGRhdGEiCiAgICAgICAgICAgIGVtYWlsU2VydmljZSAtPiBtb25pdG9yaW5nICIyLiBTZW5kR3JpZCBhbmFseXRpY3MiCiAgICAgICAgICAgIGF1dG9tYXRpb25QbGF0Zm9ybSAtPiBtb25pdG9yaW5nICIzLiBNYWtlLmNvbSBtZXRyaWNzIgogICAgICAgICAgICBzZXJ2ZXJsZXNzTG9naWMgLT4gbW9uaXRvcmluZyAiNC4gTGFtYmRhIG1ldHJpY3MgKGR1cmF0aW9uLCBlcnJvcnMsIGludm9jYXRpb25zLCBtZW1vcnkgdXNhZ2UsIGNvbGQgc3RhcnRzKSIKICAgICAgICAgICAgaW50ZXJuYWxOb3RpZmljYXRpb24gLT4gbW9uaXRvcmluZyAiNS4gU2xhY2sgQVBJIHVzYWdlIGFuZCBkZWxpdmVyeSBzdGF0cyIKICAgICAgICAgICAgYWRtaW4gLT4gbW9uaXRvcmluZyAiNi4gVmlld3MgY29uc29saWRhdGVkIGRhdGEiCiAgICAgICAgfQoKICAgICAgICBkeW5hbWljICogIk5vdGlmaWNhdGlvbkZsb3ciIHsKICAgICAgICAgICAgdGl0bGUgIk5vdGlmaWNhdGlvbiBTZXJ2aWNlcyBGbG93IgogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgICAgIGF1dG9tYXRpb25QbGF0Zm9ybSAtPiBzbXNTZXJ2aWNlICIxLiBTZW5kcyBTTVMiCiAgICAgICAgICAgIGF1dG9tYXRpb25QbGF0Zm9ybSAtPiBlbWFpbFNlcnZpY2UgIjIuIFNlbmRzIGVtYWlscyIKICAgICAgICAgICAgYXV0b21hdGlvblBsYXRmb3JtIC0+IGludGVybmFsTm90aWZpY2F0aW9uICIzLiBTZW5kcyBTbGFjayBhbGVydHMiCiAgICAgICAgICAgIGF1dG9tYXRpb25QbGF0Zm9ybSAtPiBpbnRlcm5hbE5vdGlmaWNhdGlvbiAiNC4gUmVwb3J0cyB3b3JrZmxvdyBpc3N1ZXMiCiAgICAgICAgfQogICAgfQp9Cg=="
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "2",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "admin"
+      },
+      "name" : "System Admin",
+      "description" : "Administrator responsible for overseeing and managing the automation processes.",
+      "relationships" : [ {
+        "id" : "17",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "52cb2ac2-58cf-4614-976f-a50ee7d81ee1"
+        },
+        "sourceId" : "2",
+        "destinationId" : "8",
+        "description" : "Manages workflows on"
+      }, {
+        "id" : "36",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "0ae6894e-aab8-46a7-9322-c797b09cb4bb"
+        },
+        "sourceId" : "2",
+        "destinationId" : "15",
+        "description" : "Views monitoring dashboards"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "1",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "user"
+      },
+      "name" : "Client User",
+      "description" : "User interacting with the system to place and manage orders.",
+      "relationships" : [ {
+        "id" : "16",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "89bb5d34-cfcc-4bb6-b68a-0e2f517b88bc"
+        },
+        "sourceId" : "1",
+        "destinationId" : "8",
+        "description" : "Interacts with"
+      } ],
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "5",
+      "tags" : "Element,Software System,Twilio",
+      "properties" : {
+        "structurizr.dsl.identifier" : "smsservice"
+      },
+      "name" : "Twilio",
+      "description" : "External service for sending SMS notifications.",
+      "relationships" : [ {
+        "id" : "37",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "a6ef5f71-386b-4cd8-9bec-52c006fcf297"
+        },
+        "sourceId" : "5",
+        "destinationId" : "15",
+        "description" : "Sends Twilio Insights metrics and logs"
+      } ],
+      "group" : "Communication Services",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "15",
+      "tags" : "Element,Software System,Grafana",
+      "properties" : {
+        "structurizr.dsl.identifier" : "monitoring"
+      },
+      "name" : "Monitoring System",
+      "description" : "System for tracking performance.",
+      "group" : "Processing & Monitoring",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "13",
+      "tags" : "Element,Software System,Automation Database",
+      "properties" : {
+        "structurizr.dsl.identifier" : "database"
+      },
+      "name" : "Automation Database",
+      "description" : "Relational database for storing automation workflows and integration data.",
+      "group" : "Processing & Monitoring",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "14",
+      "tags" : "Element,Software System,AWS Lambda",
+      "properties" : {
+        "structurizr.dsl.identifier" : "serverlesslogic"
+      },
+      "name" : "AWS Lambda",
+      "description" : "Serverless computing service.",
+      "relationships" : [ {
+        "id" : "42",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "ff156207-0ac3-4aee-b5b7-74c32f165e20"
+        },
+        "sourceId" : "14",
+        "destinationId" : "15",
+        "description" : "Sends Lambda execution metrics and logs"
+      }, {
+        "id" : "45",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "0f422347-42ac-4b4b-9f16-0b4f452607a9"
+        },
+        "sourceId" : "14",
+        "destinationId" : "7",
+        "description" : "Sends Lambda execution errors"
+      } ],
+      "group" : "Processing & Monitoring",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "4",
+      "tags" : "Element,Software System,OMS System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "omssystem"
+      },
+      "name" : "OMS System",
+      "description" : "External Order Management System with its own database, GUI, and API for order processing.",
+      "relationships" : [ {
+        "id" : "40",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "8f3f5762-9959-443d-8601-2951d247ea7e"
+        },
+        "sourceId" : "4",
+        "destinationId" : "15",
+        "description" : "Sends order processing metrics"
+      } ],
+      "group" : "Core Systems",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "8",
+      "tags" : "Element,Software System,Make.com",
+      "properties" : {
+        "structurizr.dsl.identifier" : "automationplatform"
+      },
+      "name" : "Automation Platform",
+      "description" : "Platform for managing and automating business processes.",
+      "relationships" : [ {
+        "id" : "21",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "da42ed4f-4755-40cf-9ded-fabb44daaf7d"
+        },
+        "sourceId" : "8",
+        "destinationId" : "6",
+        "description" : "Sends emails via"
+      }, {
+        "id" : "18",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "5b137d81-c061-4a9b-bf2a-a8064c1d9aa0"
+        },
+        "sourceId" : "8",
+        "destinationId" : "3",
+        "description" : "Communicates with for customer data"
+      }, {
+        "id" : "19",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "89b32c86-8cf1-43f9-92f9-65908ab0258e"
+        },
+        "sourceId" : "8",
+        "destinationId" : "4",
+        "description" : "Communicates with for order processing"
+      }, {
+        "id" : "28",
+        "sourceId" : "8",
+        "destinationId" : "15",
+        "description" : "Sends performance metrics",
+        "linkedRelationshipId" : "27"
+      }, {
+        "id" : "22",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "b15fa4c8-9c8c-47aa-b394-5e5e60dbc75d"
+        },
+        "sourceId" : "8",
+        "destinationId" : "7",
+        "description" : "Sends internal notifications via"
+      }, {
+        "id" : "23",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "e842a9ca-ab84-4a62-8439-fea4a10a9dea"
+        },
+        "sourceId" : "8",
+        "destinationId" : "14",
+        "description" : "Triggers AWS Lambda for specific logic"
+      }, {
+        "id" : "20",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "a23f191f-ee32-43fe-b9e2-4b4336f3a4dd"
+        },
+        "sourceId" : "8",
+        "destinationId" : "5",
+        "description" : "Sends SMS notifications via"
+      }, {
+        "id" : "41",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "563f5f24-d11a-4a16-8fd8-0b3d5db5c7c1"
+        },
+        "sourceId" : "8",
+        "destinationId" : "15",
+        "description" : "Sends Make.com execution metrics"
+      }, {
+        "id" : "25",
+        "sourceId" : "8",
+        "destinationId" : "13",
+        "description" : "Reads/Writes workflow data",
+        "linkedRelationshipId" : "24"
+      } ],
+      "group" : "Processing & Monitoring",
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "10",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "integrationhub"
+        },
+        "name" : "Integration Hub",
+        "description" : "Central hub for managing external system integrations.",
+        "relationships" : [ {
+          "id" : "33",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "eeca0257-b114-42ac-ad28-39171e4165df"
+          },
+          "sourceId" : "10",
+          "destinationId" : "4",
+          "description" : "Manages orders"
+        }, {
+          "id" : "43",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "296361d6-b576-4019-863d-e23bf8b6721f"
+          },
+          "sourceId" : "10",
+          "destinationId" : "7",
+          "description" : "Sends internal team notifications to Slack"
+        }, {
+          "id" : "26",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "8f9f6b09-0c87-4e23-a8c4-7463132c5834"
+          },
+          "sourceId" : "10",
+          "destinationId" : "13",
+          "description" : "Reads/Writes integration data"
+        }, {
+          "id" : "35",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "33e32d09-4f64-48e4-b491-097208262a6a"
+          },
+          "sourceId" : "10",
+          "destinationId" : "6",
+          "description" : "Sends emails"
+        }, {
+          "id" : "34",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "28e9d18f-e381-441f-bb5c-e81cb8e36923"
+          },
+          "sourceId" : "10",
+          "destinationId" : "5",
+          "description" : "Sends SMS notifications"
+        }, {
+          "id" : "32",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "aa0b20e4-f1ab-42ff-80f3-65efcd33b8fc"
+          },
+          "sourceId" : "10",
+          "destinationId" : "3",
+          "description" : "Retrieves customer data"
+        } ],
+        "technology" : "Make.com, REST API",
+        "documentation" : { }
+      }, {
+        "id" : "11",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "schedulerservice"
+        },
+        "name" : "Scheduler Service",
+        "description" : "Service for managing scheduled and recurring tasks.",
+        "relationships" : [ {
+          "id" : "30",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "974fb5f3-c94b-4752-80fa-61646dc6ff8e"
+          },
+          "sourceId" : "11",
+          "destinationId" : "9",
+          "description" : "Triggers scheduled workflows"
+        } ],
+        "technology" : "Make.com Scheduler",
+        "documentation" : { }
+      }, {
+        "id" : "12",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "monitoringservice"
+        },
+        "name" : "Monitoring Service",
+        "description" : "Service for tracking workflow execution and performance.",
+        "relationships" : [ {
+          "id" : "27",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "5a695397-1098-40db-8bd8-82574b118874"
+          },
+          "sourceId" : "12",
+          "destinationId" : "15",
+          "description" : "Sends performance metrics"
+        } ],
+        "technology" : "Make.com Analytics",
+        "documentation" : { }
+      }, {
+        "id" : "9",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "workflowengine"
+        },
+        "name" : "Workflow Engine",
+        "description" : "Core engine for executing and managing automation workflows.",
+        "relationships" : [ {
+          "id" : "44",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "ee78df62-b96e-40d6-bb75-a054d0188e91"
+          },
+          "sourceId" : "9",
+          "destinationId" : "7",
+          "description" : "Sends workflow failure alerts"
+        }, {
+          "id" : "29",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e38c619d-ef59-4bb0-9671-223e148260d4"
+          },
+          "sourceId" : "9",
+          "destinationId" : "10",
+          "description" : "Sends integration requests"
+        }, {
+          "id" : "24",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "f67cbffe-e236-4a41-a251-4ad6ec3f6a43"
+          },
+          "sourceId" : "9",
+          "destinationId" : "13",
+          "description" : "Reads/Writes workflow data"
+        }, {
+          "id" : "31",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e285da54-b2e9-49f6-83d2-406320f32be8"
+          },
+          "sourceId" : "9",
+          "destinationId" : "12",
+          "description" : "Reports workflow status"
+        } ],
+        "technology" : "Make.com",
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    }, {
+      "id" : "6",
+      "tags" : "Element,Software System,SendGrid",
+      "properties" : {
+        "structurizr.dsl.identifier" : "emailservice"
+      },
+      "name" : "SendGrid",
+      "description" : "External service for sending emails.",
+      "relationships" : [ {
+        "id" : "38",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "137c418b-20a7-4e43-bc99-df8454c54d94"
+        },
+        "sourceId" : "6",
+        "destinationId" : "15",
+        "description" : "Sends SendGrid analytics and delivery stats"
+      } ],
+      "group" : "Communication Services",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "3",
+      "tags" : "Element,Software System,CRM System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "crmsystem"
+      },
+      "name" : "CRM System",
+      "description" : "External CRM system for managing client relationships.",
+      "relationships" : [ {
+        "id" : "39",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "9408c6be-0338-44f8-b3b4-9fa064124304"
+        },
+        "sourceId" : "3",
+        "destinationId" : "15",
+        "description" : "Sends API usage and performance metrics"
+      } ],
+      "group" : "Core Systems",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "7",
+      "tags" : "Element,Software System,Slack",
+      "properties" : {
+        "structurizr.dsl.identifier" : "internalnotification"
+      },
+      "name" : "Slack",
+      "description" : "Service for sending internal notifications.",
+      "relationships" : [ {
+        "id" : "46",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "afc2e141-6673-483e-ae2a-cbff5db6ede1"
+        },
+        "sourceId" : "7",
+        "destinationId" : "15",
+        "description" : "Sends Slack API usage and delivery stats"
+      } ],
+      "group" : "Communication Services",
+      "location" : "Unspecified",
+      "documentation" : { }
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemContextViews" : [ {
+      "key" : "SystemContext-001",
+      "order" : 1,
+      "softwareSystemId" : "8",
+      "dimensions" : {
+        "width" : 3070,
+        "height" : 4811
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 199,
+        "y" : 1081
+      }, {
+        "id" : "2",
+        "x" : 199,
+        "y" : 3231
+      }, {
+        "id" : "13",
+        "x" : 1649,
+        "y" : 1131
+      }, {
+        "id" : "14",
+        "x" : 1649,
+        "y" : 531
+      }, {
+        "id" : "3",
+        "x" : 1649,
+        "y" : 3531
+      }, {
+        "id" : "15",
+        "x" : 2399,
+        "y" : 1131
+      }, {
+        "id" : "4",
+        "x" : 1649,
+        "y" : 4131
+      }, {
+        "id" : "5",
+        "x" : 1649,
+        "y" : 1731
+      }, {
+        "id" : "6",
+        "x" : 1649,
+        "y" : 2331
+      }, {
+        "id" : "7",
+        "x" : 1649,
+        "y" : 2931
+      }, {
+        "id" : "8",
+        "x" : 899,
+        "y" : 1131
+      } ],
+      "relationships" : [ {
+        "id" : "40",
+        "vertices" : [ {
+          "x" : 2203,
+          "y" : 3981
+        } ]
+      }, {
+        "id" : "41",
+        "vertices" : [ {
+          "x" : 1545,
+          "y" : 231
+        }, {
+          "x" : 2203,
+          "y" : 231
+        } ]
+      }, {
+        "id" : "42"
+      }, {
+        "id" : "21",
+        "vertices" : [ {
+          "x" : 1545,
+          "y" : 2181
+        } ]
+      }, {
+        "id" : "20"
+      }, {
+        "id" : "18",
+        "vertices" : [ {
+          "x" : 1545,
+          "y" : 3410
+        } ]
+      }, {
+        "id" : "17"
+      }, {
+        "id" : "28",
+        "vertices" : [ {
+          "x" : 1545,
+          "y" : 531
+        }, {
+          "x" : 2203,
+          "y" : 531
+        } ]
+      }, {
+        "id" : "16"
+      }, {
+        "id" : "37"
+      }, {
+        "id" : "36",
+        "vertices" : [ {
+          "x" : 1545,
+          "y" : 4610
+        }, {
+          "x" : 2203,
+          "y" : 4610
+        } ]
+      }, {
+        "id" : "25"
+      }, {
+        "id" : "23"
+      }, {
+        "id" : "22",
+        "vertices" : [ {
+          "x" : 1545,
+          "y" : 2781
+        } ]
+      }, {
+        "id" : "45",
+        "vertices" : [ {
+          "x" : 1545,
+          "y" : 981
+        }, {
+          "x" : 1447,
+          "y" : 1131
+        }, {
+          "x" : 1447,
+          "y" : 2631
+        }, {
+          "x" : 1545,
+          "y" : 2781
+        } ]
+      }, {
+        "id" : "46",
+        "vertices" : [ {
+          "x" : 2203,
+          "y" : 2781
+        } ]
+      }, {
+        "id" : "38",
+        "vertices" : [ {
+          "x" : 2203,
+          "y" : 2181
+        } ]
+      }, {
+        "id" : "39",
+        "vertices" : [ {
+          "x" : 2203,
+          "y" : 3410
+        } ]
+      }, {
+        "id" : "19",
+        "vertices" : [ {
+          "x" : 1545,
+          "y" : 3981
+        } ]
+      } ]
+    } ],
+    "containerViews" : [ {
+      "key" : "Container-001",
+      "order" : 2,
+      "softwareSystemId" : "8",
+      "dimensions" : {
+        "width" : 3870,
+        "height" : 3850
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "11",
+        "x" : 220,
+        "y" : 1254
+      }, {
+        "id" : "12",
+        "x" : 1720,
+        "y" : 954
+      }, {
+        "id" : "13",
+        "x" : 2470,
+        "y" : 350
+      }, {
+        "id" : "3",
+        "x" : 2470,
+        "y" : 2750
+      }, {
+        "id" : "4",
+        "x" : 2470,
+        "y" : 950
+      }, {
+        "id" : "15",
+        "x" : 3220,
+        "y" : 1850
+      }, {
+        "id" : "5",
+        "x" : 2470,
+        "y" : 1550
+      }, {
+        "id" : "6",
+        "x" : 2470,
+        "y" : 2150
+      }, {
+        "id" : "7",
+        "x" : 2470,
+        "y" : 3350
+      }, {
+        "id" : "9",
+        "x" : 970,
+        "y" : 1254
+      }, {
+        "id" : "10",
+        "x" : 1720,
+        "y" : 1554
+      } ],
+      "relationships" : [ {
+        "id" : "40"
+      }, {
+        "id" : "43",
+        "vertices" : [ {
+          "x" : 2470,
+          "y" : 3200
+        } ]
+      }, {
+        "id" : "32",
+        "vertices" : [ {
+          "x" : 2470,
+          "y" : 2600
+        } ]
+      }, {
+        "id" : "31"
+      }, {
+        "id" : "30"
+      }, {
+        "id" : "29"
+      }, {
+        "id" : "27",
+        "vertices" : [ {
+          "x" : 2470,
+          "y" : 200
+        }, {
+          "x" : 2920,
+          "y" : 200
+        } ]
+      }, {
+        "id" : "26",
+        "vertices" : [ {
+          "x" : 2274,
+          "y" : 1404
+        }, {
+          "x" : 2470,
+          "y" : 800
+        } ]
+      }, {
+        "id" : "37"
+      }, {
+        "id" : "35"
+      }, {
+        "id" : "24",
+        "vertices" : [ {
+          "x" : 1720,
+          "y" : 804
+        } ]
+      }, {
+        "id" : "34"
+      }, {
+        "id" : "33"
+      }, {
+        "id" : "44",
+        "vertices" : [ {
+          "x" : 2470,
+          "y" : 3200
+        } ]
+      }, {
+        "id" : "46",
+        "vertices" : [ {
+          "x" : 2920,
+          "y" : 3200
+        } ]
+      }, {
+        "id" : "38"
+      }, {
+        "id" : "39"
+      } ]
+    } ],
+    "dynamicViews" : [ {
+      "key" : "NotificationFlow",
+      "order" : 4,
+      "title" : "Notification Services Flow",
+      "dimensions" : {
+        "width" : 2390,
+        "height" : 1394
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "externalBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "20",
+        "description" : "1. Sends SMS",
+        "order" : "1",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1569,
+          "y" : 715
+        } ]
+      }, {
+        "id" : "21",
+        "description" : "2. Sends emails",
+        "order" : "2",
+        "response" : false
+      }, {
+        "id" : "22",
+        "description" : "3. Sends Slack alerts",
+        "order" : "3",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 504,
+          "y" : 589
+        } ]
+      }, {
+        "id" : "22",
+        "description" : "4. Reports workflow issues",
+        "order" : "4",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 758,
+          "y" : 748
+        } ]
+      } ],
+      "elements" : [ {
+        "id" : "5",
+        "x" : 1719,
+        "y" : 819
+      }, {
+        "id" : "6",
+        "x" : 969,
+        "y" : 819
+      }, {
+        "id" : "7",
+        "x" : 219,
+        "y" : 819
+      }, {
+        "id" : "8",
+        "x" : 594,
+        "y" : 219
+      } ]
+    }, {
+      "key" : "MetricsCollectionFlow",
+      "order" : 3,
+      "title" : "External Services Metrics Collection",
+      "dimensions" : {
+        "width" : 4570,
+        "height" : 1474
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "externalBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "37",
+        "description" : "1. Twilio Insights data",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "38",
+        "description" : "2. SendGrid analytics",
+        "order" : "2",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1570,
+          "y" : 654
+        } ]
+      }, {
+        "id" : "28",
+        "description" : "3. Make.com metrics",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "42",
+        "description" : "4. Lambda metrics (duration, errors, invocations, memory usage, cold starts)",
+        "order" : "4",
+        "response" : false
+      }, {
+        "id" : "46",
+        "description" : "5. Slack API usage and delivery stats",
+        "order" : "5",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 820,
+          "y" : 654
+        } ]
+      }, {
+        "id" : "36",
+        "description" : "6. Views consolidated data",
+        "order" : "6",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 3849,
+          "y" : 654
+        } ]
+      } ],
+      "elements" : [ {
+        "id" : "2",
+        "x" : 3970,
+        "y" : 200
+      }, {
+        "id" : "14",
+        "x" : 3220,
+        "y" : 250
+      }, {
+        "id" : "15",
+        "x" : 2470,
+        "y" : 900
+      }, {
+        "id" : "5",
+        "x" : 1720,
+        "y" : 250
+      }, {
+        "id" : "6",
+        "x" : 970,
+        "y" : 250
+      }, {
+        "id" : "7",
+        "x" : 220,
+        "y" : 250
+      }, {
+        "id" : "8",
+        "x" : 2470,
+        "y" : 250
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "Software System",
+          "background" : "#1168bd",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Person",
+          "background" : "#08427b",
+          "color" : "#ffffff",
+          "shape" : "Person"
+        }, {
+          "tag" : "Automation Database",
+          "background" : "#ff8c42",
+          "color" : "#ffffff",
+          "shape" : "Cylinder"
+        }, {
+          "tag" : "CRM System",
+          "background" : "#5f6367",
+          "color" : "#ffffff",
+          "shape" : "RoundedBox"
+        }, {
+          "tag" : "OMS System",
+          "background" : "#5f6367",
+          "color" : "#ffffff",
+          "shape" : "RoundedBox"
+        }, {
+          "tag" : "Twilio",
+          "background" : "#5f6367",
+          "color" : "#ffffff",
+          "shape" : "RoundedBox"
+        }, {
+          "tag" : "SendGrid",
+          "background" : "#5f6367",
+          "color" : "#ffffff",
+          "shape" : "RoundedBox"
+        }, {
+          "tag" : "Slack",
+          "background" : "#5f6367",
+          "color" : "#ffffff",
+          "shape" : "RoundedBox"
+        }, {
+          "tag" : "Make.com",
+          "background" : "#3b6978",
+          "color" : "#ffffff",
+          "shape" : "RoundedBox"
+        }, {
+          "tag" : "AWS Lambda",
+          "background" : "#77c4d3",
+          "color" : "#ffffff",
+          "shape" : "RoundedBox"
+        }, {
+          "tag" : "Grafana",
+          "background" : "#faae7b",
+          "color" : "#ffffff",
+          "shape" : "RoundedBox"
+        } ]
+      },
+      "terminology" : { },
+      "metadataSymbols" : "SquareBrackets",
+      "lastSavedView" : "Container-001"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  structurizr:
+    networks:
+      - net
+    image: structurizr/lite
+    container_name:  ${APP_NAME}_structurizr
+    restart: on-failure
+    ports: 
+      - ${PORT_DIAGRAMS}:8080
+    volumes:
+      - ${DIR_DIAGRAMS}:/usr/local/structurizr
+
+volumes:
+  diagrams:
+
+networks:
+  net: { }
+
